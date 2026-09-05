@@ -15,6 +15,12 @@ npm run dev -- --port 3000
 
 Open **http://localhost:3000/**. Op Windows kun je na installatie ook dubbelklikken op **START-SPEL.cmd**.
 
+## Publiceren op Netlify
+
+Koppel deze repository aan Netlify. De meegeleverde `netlify.toml` stelt automatisch het buildcommando (`npm run build`), Node.js 22.18 en de publicatiemap (`dist/client`) in. Er zijn geen omgevingsvariabelen, serverfuncties of externe diensten nodig.
+
+Bij een bestaande Netlify-site kun je onder **Site configuration → Build & deploy** eerder handmatig ingestelde build- en publicatiewaarden verwijderen, zodat `netlify.toml` leidend is. Start daarna een nieuwe deploy met **Clear cache and deploy site**.
+
 ## Op een tablet
 
 1. Verbind computer en tablet met hetzelfde wifinetwerk.
